@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>login form</title>
+<link rel="stylesheet" type="text/css" href="stylelogin.css">
+
+</head>
+<body>
+
+
+<div class="login-page">
+
+              
+            
+
+  <div class="form">
+    <h2 style="font-family:Roboto;">LOGIN HERE</h2>
+
+    <form class="sign-up-form">
+
+      <input type="Email-id" placeholder="Enter Your Email-id" name="esw" required>
+      <input type="text" placeholder="Enter Your Username" name="uname" required>
+      <input type="password" placeholder="Enter Your Password" name="psw" required>
+      <input type="password" placeholder="Confirm Password" name="cpsw" required>
+      <button type="submit">Sign-up</button>
+      <p class="message">Already sign-up<a href="#"> login</a></p>
+    
+    </form>
+    <form class="login-form">
+<input type="text" placeholder="Enter Your Username" name="uname" required>
+      <input type="password" placeholder="Enter Your Password" name="psw" required>
+      <button type="submit">Login</button>
+      <p class="message">Not Login<a href="#"> sign-up?</a></p>
+      
+      </form>
+  </div>
+  </div>
+
+  <script>  
+function verifyPassword() {  
+  var pw = document.getElementById("pswd").value;  
+  //check empty password field  
+  if(pw == "") {  
+     document.getElementById("message").innerHTML = "**Fill the password please!";  
+     return false;  
+  }  
+   
+ //minimum password length validation  
+  if(pw.length < 8) {  
+     document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";  
+     return false;  
+  }  
+  
+//maximum length of password validation  
+  if(pw.length > 15) {  
+     document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";  
+     return false;  
+  } else {  
+     alert("Password is correct");  
+  }  
+}  
+</script>  
+<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+<script>
+$('.message a').click(function(){$('form').animate({height:"toggle", opacity: "toggle"}, "slow");});
+</script>
+ 
+
+
+
+</body>
+</html>
