@@ -1095,7 +1095,7 @@ section {
   padding: 20px 15px;
   font-size: 16px;
   font-weight: 600;
-  color: #777777;
+  color: #000000;
   background: #f8f8f8;
 }
 
@@ -1169,7 +1169,7 @@ section {
 }
 
 .pricing .featured h3 {
-  color: #fff;
+  color: #000000;
   background: #00FFFF;
 }
 
